@@ -1,0 +1,8 @@
+.navbar-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust shadow values as needed */
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1050; /* Bootstrap default for navbar */
+}
