@@ -1,0 +1,64 @@
+.custom-button {
+    position: relative;
+    color: #28a745; /* Text color */
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background-color: transparent;
+}
+
+.custom-button:hover {
+    background: linear-gradient(45deg, #28a745, #72d572);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(40, 167, 69, 0.8), 0 0 10px rgba(40, 167, 69, 0.6);
+}
+
+.custom-button::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: rotate(45deg);
+    transition: transform 0.5s ease;
+    pointer-events: none;
+}
+
+.custom-button:hover::before {
+    transform: translate(100%, 100%);
+}
+
+.custom-button:hover span {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgba(40, 167, 69, 0.6);
+}
+
+.banner {
+    padding: 250px 0;
+}
+
+@keyframes zoomInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px) scale(0.8);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(50px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.zoom-in-bottom {
+    opacity: 0;
+    animation: zoomInBottom 1s ease forwards;
+    animation-delay: 0s; /* Customize delay per element */
+}
+
+
+

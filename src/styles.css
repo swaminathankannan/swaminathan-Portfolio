@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Poppins','sans-serif';
+}
+
+.bg-image {
+    background-image: url(/src/assets/Rectangle\ 3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 

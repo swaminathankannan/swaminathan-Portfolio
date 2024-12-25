@@ -1,0 +1,41 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+    padding: 50px 0;
+}
+
+h2 {
+    color: #013546;
+    font-weight: 600;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+.list-unstyled li i {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.list-unstyled li {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.btn-success {
+    background-color: #6AC98E;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #58A672;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
